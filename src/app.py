@@ -12,6 +12,7 @@ mongo = PyMongo(app)
 @app.route('/users', methods=['post'])
 def create_user():
 
+
     username = request.json['username']
     firstName = request.json['firstName']
     password = request.json['password']
